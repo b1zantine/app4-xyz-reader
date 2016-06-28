@@ -27,7 +27,6 @@ public class ImageLoaderHelper {
 
     public ImageLoaderHelper requestFrom(Activity activity){
         if(activity instanceof ArticleDetailActivity){
-            Log.e("CONTECT", "ImageLoaderHelper: ");
             callbacks = (ImageLoaderHelper.Callbacks) activity;
         }
         return sInstance;
@@ -39,7 +38,6 @@ public class ImageLoaderHelper {
             @Override
             public void putBitmap(String key, Bitmap value) {
                 mImageCache.put(key, value);
-                Log.e("TTTTTTT", "putBitmap: " );
                 if(callbacks != null) {
                     callbacks.onAddedToCache(key, value);
                 }
