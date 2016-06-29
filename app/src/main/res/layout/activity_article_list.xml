@@ -20,15 +20,7 @@
                 android:background="@color/theme_primary"
                 app:navigationIcon="@mipmap/ic_launcher"
                 app:elevation="4dp"
-                app:popupTheme="@style/AppTheme.PopupOverlay">
-
-                <android.support.v7.widget.AppCompatImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="?actionBarSize"
-                    android:src="@drawable/logo"
-                    android:contentDescription="@string/app_name" />
-            </android.support.v7.widget.Toolbar>
-
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
