@@ -128,8 +128,8 @@ public class ArticleDetailActivity extends AppCompatActivity
             Palette palette = Palette.from(bitmap).generate();
             photoView.setImageBitmap(bitmap);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                getWindow().setStatusBarColor(palette.getVibrantColor(ContextCompat.getColor(this, R.color.theme_primary_dark)));
-            collapseToolBar.setContentScrimColor(palette.getLightVibrantColor(ContextCompat.getColor(this, R.color.theme_primary)));
+                getWindow().setStatusBarColor(palette.getDarkVibrantColor(ContextCompat.getColor(this, android.R.color.transparent)));
+            collapseToolBar.setContentScrimColor(palette.getVibrantColor(ContextCompat.getColor(this, android.R.color.transparent)));
             scrim.setVisibility(View.GONE);
         }else setBackdropDefaults();
     }
