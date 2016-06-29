@@ -9,5 +9,6 @@
 
     <string name="up">Up</string>
     <string name="image_related_to_the_post">Image Related to the post</string>
+    <string name="transition_shared_photo">transition_shared_photo</string>
 
 </resources>
